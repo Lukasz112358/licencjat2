@@ -8,8 +8,8 @@
 \usepackage{tcolorbox}
 
 % Language setting
-% Replace `english' with e.g. `spanish' to change the document language
-\usepackage[polish]{babel}
+% Replace `English' with e.g. `spanish' to change the document language
+\usepackage[english, polish]{babel}
 
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
@@ -28,11 +28,7 @@
     basicstyle=\footnotesize,% basic font setting
 }
 
-\title{Algorytm znajdowania sumy podzbioru}
-\author{Łukasz Wasilewski}
-
 \begin{document}
-\maketitle
 
 \begin{abstract}
 Problem istnienia podzbioru o sumie $t$ zawierającego się w $n$-elementowym (multi)zbiorze $S \subset \mathbb{N}$, 
@@ -47,6 +43,41 @@ jednak dla dużych danych prawdopodobieństwo błędu jest niewielkie. Złożono
 algorytmu to $O((t+n)\log^2(t))$, zaś pamięciowa $O(n+t)$.
 
 \end{abstract}
+
+\begin{otherlanguage}{english}
+\begin{abstract}
+The problem of the existence of a subset with the sum $t$ contained in the $n$-element (multi)set $S \subset \mathbb{N}$,
+is one of the classic algorithmic problems. The problem in general is a $NP$-complete ~\cite{agarwal2011encrypting}
+however, if $t$ is relatively small and $\Omega(t)$ memory is available, there are algorithms that work
+in polynomial time on the length of the input, the most famous of which is running in time $O(nt)$
+dynamic programming algorithm.
+
+The purpose of this paper is to document the implementation
+algorithm developed by Ce Jin and Hongxun Wu in ~\cite{jin2018simple}. This algorithm is non-deterministic,
+however, for large data, the probability of error is low. The time complexity of the presented
+algorithm is $O((t+n)\log^2(t))$, and memory is $O(n+t)$
+\end{abstract}
+\end{otherlanguage}
+
+
+\newpage
+
+\tableofcontents
+% \textbf{Spis treści}
+
+% \begin{enumerate}
+%     \item{Wstęp}
+%     \item{Algorytm klasyczny}
+%     \item{Idea algorytmu Ce Jin i Hongxun Wu}
+%     \item{Implementacja ciała $ \mathbb{Z}_p$}
+%     \item{Szukanie liczby pierwszej}
+%     \item{Teorioliczbowa szybka transformata Fouriera}
+%     \item{Pochodna algebraiczna i jej własności}
+%     \item{Implementacja algorytmu Jin i Wu}
+%     \item{Wyniki}
+% \end{enumerate}
+
+\newpage
 
 \section{Wstęp}
 Problem sprawdzenia czy z $n-$elementowego multizbioru $S$ liczb naturalnych jesteśmy w stanie wybrać 

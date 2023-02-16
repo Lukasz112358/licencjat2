@@ -1,0 +1,40 @@
+% Opcje klasy 'iithesis' opisane sa w komentarzach w pliku klasy. Za ich pomoca
+% ustawia sie przede wszystkim jezyk oraz rodzaj (lic/inz/mgr) pracy.
+\documentclass[shortabstract]{iithesis}
+
+\usepackage[utf8]{inputenc}
+
+%%%%% DANE DO STRONY TYTUŁOWEJ
+% Niezaleznie od jezyka pracy wybranego w opcjach klasy, tytul i streszczenie
+% pracy nalezy podac zarowno w jezyku polskim, jak i angielskim.
+% Pamietaj o madrym (zgodnym z logicznym rozbiorem zdania oraz estetyka) recznym
+% zlamaniu wierszy w temacie pracy, zwlaszcza tego w jezyku pracy. Uzyj do tego
+% polecenia \fmlinebreak.
+\polishtitle{Algorytm znajdowania sumy podzbioru}
+\englishtitle {Algorithm for subset sum problem}
+\author{Łukasz Wasilewski}
+
+\advisor{dr Paweł Gawrychowski}
+
+%\date          {}                     % Data zlozenia pracy
+% Dane do oswiadczenia o autorskim wykonaniu
+\transcriptnum {315871}                     % Numer indeksu
+\advisorgen    {dr. Pawła Gawrychowskiego} % Nazwisko promotora w dopelniaczu
+%%%%
+
+\polishabstract{
+Problem istnienia podzbioru o sumie $t$ zawierającego się w $n$-elementowym (multi)zbiorze $S \subset \mathbb{N}$, 
+jest jednym z klasycznych problemów algorytmicznych. Problem w ogólności jest problemem $NP$-zupełnym ~\cite{agarwal2011encrypting}
+jednak jeżeli $t$ jest względnie małe i dysponujemy pamięcią $\Omega(t)$ istnieją algorytmy działające 
+w czasie wielomianowym od długości wejścia, z czego najbardziej znanym jest działający w czasie $O(nt)$ 
+algorytm oparty na programowaniu dynamicznym.
+
+Celem niniejszej pracy jest dokumentacja implementacji
+algorytmu opracowanego przez Ce Jin i Hongxun Wu w pracy ~\cite{jin2018simple}. Algorytm ten jest niedeterministyczny,
+jednak dla dużych danych prawdopodobieństwo błędu jest niewielkie. Złożoność czasowa prezentowanego
+algorytmu to $O((t+n)\log^2(t))$, zaś pamięciowa $O(n+t)$.
+}
+\englishabstract{\ldots}
+
+\begin{document}
+\end{document}

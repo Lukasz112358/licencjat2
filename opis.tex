@@ -304,7 +304,7 @@ argumencie niebędącym liczbą pierwszą utworzyłem funkcję \texttt{setPsilly
 \texttt{x} typu \texttt{\textunderscore \textunderscore int128} i ustawia na niego wartość
 pola \texttt{p}, wartość pola \texttt{m} ustawia podobnie jak w funkcji \texttt{setP} na  
 $\lfloor \frac{2^{127}-1}{p} \rfloor$, pozostałe pola statyczne zaś ustawia na \texttt{0} i czyści tablicę odwrotności.
-Metoda \texttt{setP} służy rozszeżeniu funkcjonalności klasy \texttt{field} o możliwość symulacji obliczeń w 
+Metoda \texttt{setP} służy rozszerzeniu funkcjonalności klasy \texttt{field} o możliwość symulacji obliczeń w 
 pierścieniu $\mathbb{Z}_n$, gdzie $n$ nie jest liczbą pierwszą.
 
 
@@ -441,7 +441,7 @@ nasza klasa może symulować niektóre działania modulo \texttt{p} dla \texttt{
 nie będącego liczbą pierwszą. Oczywiście wtedy małe twierdzenie Fermata
 przestaje pozwalać na ową redukcję \texttt{b} do reszty z dzielenia przez
 \texttt{p-1}, tak więc przypadek ten skorygowałem prostym \texttt{if}-em, sprawdzającym 
-czy wartość pola \texttt{odd} jest równa \texttt{0}, co może się zdażyć tylko wtedy gdy klasa 
+czy wartość pola \texttt{odd} jest równa \texttt{0}, co może się zdarzyć tylko wtedy gdy klasa 
 jest inicjalizowana funkcją \texttt{setPsilly}.
 
 Jeżeli \texttt{b==0}, przypisuję \texttt{a} wartość \texttt{1} i zwracam wynik. Jeżeli \texttt{b==1} 
@@ -732,7 +732,7 @@ prawdopodobieństwo tego jest znikome, a ewentualny koszt niewielki. Następnie 
 wylosowane $r$ z wyznaczonym $2^k$ i dodaję do wyniku $1$. Wynik tych operacji zapisuję w zmiennej \texttt{mod}.
 Kolejnym krokiem jest dla tak uzyskanej liczby sprawdzenie, czy 
 jest pierwsza przy pomocy funkcji \texttt{MillerRabin}. Jeżeli \texttt{m} i \texttt{t} są małe  może nie istnieć liczba pierwsza szukanej przez nas postaci, 
-dlatego po wykonaniu \texttt{1000000} losowań ziększam \texttt{mod} dwukrotnie.
+dlatego po wykonaniu \texttt{1000000} losowań zwiększam \texttt{mod} dwukrotnie.
 
 
 

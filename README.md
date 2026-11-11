@@ -3,7 +3,7 @@
 Bachelor's thesis project developed at the University of Wrocław.
 
 The project focuses on the implementation of a randomized algorithm for the
-classical **Subset Sum problem**, developed by [Ce Jin and Hongxun Wu](https://arxiv.org/abs/2403.19117).
+classical **Subset Sum problem**, developed by [Ce Jin and Hongxun Wu](https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.SOSA.2019.17).
 
 Given a multiset of natural numbers $S$ and a target value $t$, the goal is to
 determine which sums up to $t$ can be obtained by selecting a subset of the
